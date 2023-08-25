@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>SAKLAR LAMPU</title>
+    </head>
+    <body>
+        <img src="https://publicdomainvectors.org/photos/Anonymous_Lightbulb_Off.png" alt="" id="lampu1">
+        <h1>SAKLAR LAMPU ON OFF</h1>
+        <button onclick="saklar('on')">NYALAKAN LAMPU</button>
+        <button onclick="saklar('off')">MATIKAN LAMPU</button>
+
+        <!-- ini adalah script js-->
+        <script>
+            function saklar (params){
+
+
+                let lampu1 = document.getElementById("lampu1");
+
+                if(params == "on"){
+                    lampu1.src = "https://publicdomainvectors.org/photos/Anonymous_Lightbulb_Lit.png";
+                }
+                if(params == "off"){
+                    lampu1.src= "https://publicdomainvectors.org/photos/Anonymous_Lightbulb_Off.png";
+                }
+                return lampu1;
+            }
+        </script>
+    </body>
+</html>
